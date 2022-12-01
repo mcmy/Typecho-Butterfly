@@ -2,7 +2,7 @@
          <span id="blog_name">
             <a id="site-name" href="<?php $this->options->siteUrl(); ?>">
                 <?php if($this->options->SiteLogo !== '') : ?>
-                <img src="<?php $this->options->SiteLogo() ?>" border="0" width="95px" />
+                <img src="<?php $this->options->SiteLogo() ?>" style="width:auto;height:45px;border:0;margin-top:20px;object-fit:cover;" />
                 <?php else :?>
                 <?php $this->options->title() ?>
                 <?php endif ?>

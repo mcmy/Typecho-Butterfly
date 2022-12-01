@@ -2,7 +2,7 @@
 <?php if(!$this->page404()): ?>
 <footer id="footer">
     <div id="footer-wrap"><div class="copyright">   
-    <div class="copyright">©<?php echo date('Y'); ?> By <?php $this->author(); ?></div>
+    <div class="copyright">©<?php echo date('Y'); ?> By <?php echo empty($this->author()) ? $_SERVER['SERVER_NAME'] : $this->author(); ?></div>
     <div class="framework-info">
         <span>由</span>
         <a target="_blank" href="http://www.typecho.org">Typecho</a><span> 强力驱动</span>

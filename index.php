@@ -105,6 +105,7 @@ $uid = $this->user->uid; //登录时，显示用户各自的私密文章
 <?php $this->need('sidebar.php'); ?>
 </main>
 <?php $this->need('footer.php'); ?>
+<?php exit()?>
 <script>
 function ver() {console.log(`
 ===================================================================

@@ -23,6 +23,10 @@ function themeConfig($form) {
     <script src="<?php Helper::options()->themeUrl('js/themecustom.js?v1.5.3'); ?>"></script>
     <script src='https://gcore.jsdelivr.net/gh/wehaox/CDN@main/postdomai.js'></script>
     <?php
+    
+    $site_title = new Typecho_Widget_Helper_Form_Element_Text('site_title', NULL, NULL,'首页标题', '<div style="font-family:arial; background:#E8EFD1; padding:8px">显示在首页中心的介绍</div>');
+    $form->addInput($site_title);
+    
     $sticky_cids = new Typecho_Widget_Helper_Form_Element_Text('sticky_cids', NULL, NULL,'置顶文章的 cid', '<div style="font-family:arial; background:#E8EFD1; padding:8px">按照排序输入, 请以半角逗号或空格分隔 cid</div>');
     $sticky_cids->setAttribute('id', 'cids');
     $form->addInput($sticky_cids);
